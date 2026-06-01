@@ -429,7 +429,88 @@ const lesson1grammar = `<div class="ex-wrap">
 
 const lessons = [
   { num:1,  date:"17/06", he:"הצגת עצמית + סמלים יהודיים", es:"Presentación personal y símbolos judíos", song:"פנתרה — נועה קירל", grammar:lesson1grammar, lyrics:lesson1lyrics, exercise:`<div class="ex-wrap"><div class="note-box" style="text-align:center;direction:ltr"><p style="font-size:15px;color:var(--navy);font-weight:700;margin-bottom:12px">✏️ תרגילים | Ejercicios</p><a href="https://lo.cet.ac.il/player/?document=0e099400-815c-4171-896b-4e94344ea727&language=he#pageId=page_1&documentId=0e099400-815c-4171-896b-4e94344ea727" target="_blank" style="display:inline-block;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">לתרגילים ← לחצו כאן</a></div></div>` },
-  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:"כינויי קניין אגלוטינטיביים: ארצי, אדמתי", lyrics:lesson2lyrics, exercise:"" },
+  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:"כינויי קניין אגלוטינטיביים: ארצי, אדמתי", lyrics:lesson2lyrics, exercise:`<div class="ex-wrap">
+<div class="ex-section-title">כינויי שייכות (כינוי קניין)</div>
+
+<div class="note-box" style="margin-bottom:16px">
+<strong>תרגיל 1 — השלימו את המשפטים</strong><br>
+<span style="font-size:13px;color:var(--text-light)">דוגמה: חברתי (החברה שלי) שיחקה כדורגל.</span>
+</div>
+
+<div style="direction:rtl;text-align:right;display:flex;flex-direction:column;gap:14px">
+
+<div style="background:var(--off-white);border-radius:8px;padding:14px;font-size:15px;line-height:2">
+אֶתמול הלכתי עם <input type="text" placeholder="אימא שלי..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:140px;text-align:right;outline:none;color:var(--navy)"> לטייל בקֶניון.
+</div>
+
+<div style="background:var(--off-white);border-radius:8px;padding:14px;font-size:15px;line-height:2">
+<input type="text" placeholder="אח שלך..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:140px;text-align:right;outline:none;color:var(--navy)"> שׂיחק אֶתמול כדורגל?
+</div>
+
+<div style="background:var(--off-white);border-radius:8px;padding:14px;font-size:15px;line-height:2">
+סבתא לקחה את <input type="text" placeholder="הנכדה שלה..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:140px;text-align:right;outline:none;color:var(--navy)"> לסֶרֶט.
+</div>
+
+<div style="background:var(--off-white);border-radius:8px;padding:14px;font-size:15px;line-height:2">
+אני אוהב לשחק עם <input type="text" placeholder="האחות שלי..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:140px;text-align:right;outline:none;color:var(--navy)"> בכדורסל.
+</div>
+
+<div style="background:var(--off-white);border-radius:8px;padding:14px;font-size:15px;line-height:2">
+לדני היה יום הולֶדֶת. <input type="text" placeholder="הדוד שלו..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:120px;text-align:right;outline:none;color:var(--navy)"> בא למסיבה. גם <input type="text" placeholder="סבתא שלו..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:130px;text-align:right;outline:none;color:var(--navy)"> באה. <input type="text" placeholder="אימא שלו..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;width:130px;text-align:right;outline:none;color:var(--navy)"> אפְתה לו עוּגת שוקולד.
+</div>
+</div>
+
+<div class="ex-section-title" style="margin-top:20px">תרגיל 2 — השלימו את הטבלה</div>
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:13px;direction:rtl;text-align:right;min-width:400px">
+<thead>
+<tr>
+  <th style="background:var(--navy);color:white;padding:9px 12px;font-weight:600">כינוי</th>
+  <th style="background:var(--navy);color:white;padding:9px 12px;font-weight:600">דוגמה: דגל</th>
+  <th style="background:var(--blue);color:white;padding:9px 12px;font-weight:600">כלבה</th>
+  <th style="background:var(--blue);color:white;padding:9px 12px;font-weight:600">חתול</th>
+  <th style="background:var(--blue);color:white;padding:9px 12px;font-weight:600">דגלים</th>
+</tr>
+</thead>
+<tbody>
+${[
+  ["שֶלִי","דִּגְלִי"],
+  ["שֶלְךָ","דִּגְלְךָ"],
+  ["שֶלָךְ","דִּגְלֵךְ"],
+  ["שֶלוֹ","דִּגְלוֹ"],
+  ["שֶלָה","דִּגְלָהּ"],
+  ["שֶלָנוּ","דִּגְלֵנוּ"],
+  ["שֶלָכֶם","דַּגַּלְכֶם"],
+  ["שֶלָכֶן","דִּגְלְכֶן"],
+  ["שֶלָהֶם","דִּגְלָם"],
+  ["שֶלָהֶן","דִּגְלָן"],
+].map((r,i) => `<tr style="background:${i%2===0?'var(--off-white)':'white'}">
+  <td style="padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text-mid)">${r[0]}</td>
+  <td style="padding:8px 12px;border-bottom:1px solid var(--border);color:var(--navy);font-weight:600">${r[1]}</td>
+  <td style="padding:8px 12px;border-bottom:1px solid var(--border)"><input type="text" style="border:none;border-bottom:1.5px solid var(--border-mid);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:14px;width:90px;text-align:right;outline:none;color:var(--navy)"></td>
+  <td style="padding:8px 12px;border-bottom:1px solid var(--border)"><input type="text" style="border:none;border-bottom:1.5px solid var(--border-mid);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:14px;width:90px;text-align:right;outline:none;color:var(--navy)"></td>
+  <td style="padding:8px 12px;border-bottom:1px solid var(--border)"><input type="text" style="border:none;border-bottom:1.5px solid var(--border-mid);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:14px;width:90px;text-align:right;outline:none;color:var(--navy)"></td>
+</tr>`).join('')}
+</tbody>
+</table>
+</div>
+
+<div class="ex-section-title" style="margin-top:20px">תרגיל 3 — כתבו בשתי מילים</div>
+<div style="font-size:13px;color:var(--text-light);margin-bottom:10px;direction:rtl">דוגמה: כלבו ← הכלב שלו</div>
+<div style="direction:rtl;text-align:right;display:flex;flex-direction:column;gap:10px">
+${[
+  "בֵּיתָהּ",
+  "מוֹרָתִי",
+  "מַחְבַּרְתֵךְ",
+  "עֲבוֹדַתְכֶן",
+  "יַלְקוּטוֹ"
+].map(w => `<div style="background:var(--off-white);border-radius:8px;padding:12px 14px;font-size:15px;font-family:'Frank Ruhl Libre',serif;display:flex;align-items:center;gap:10px">
+  <span style="color:var(--navy);font-weight:700;min-width:120px">${w}</span>
+  <span style="color:var(--text-light)">←</span>
+  <input type="text" placeholder="..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;flex:1;text-align:right;outline:none;color:var(--navy)">
+</div>`).join('')}
+</div>
+</div>` },
   { num:3,  date:"01/07", he:"תל אביב: העיר ללא הפסקה", es:"Tel Aviv: Estilo de Vida", song:'תל אביב (עומר אדם)', grammar:"", lyrics:"", exercise:"" },
   { num:4,  date:"08/07", he:"ירושלים: ישן מול חדש", es:"Jerusalén: Historia y Modernidad", song:'ירושלים של זהב (נעמי שמר)', grammar:"", lyrics:"", exercise:"" },
   { num:5,  date:"15/07", he:"ט'ו אב - יום האהבה", es:"Tu Ve Ab", song:"שירי אהבה — מוש בן ארי + עידן רייכל", grammar:"", lyrics:"", exercise:"" },
