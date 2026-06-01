@@ -305,56 +305,57 @@
 </div>
 
 <script>
-const lesson1lyrics = `פרובוקטיבית — נועה קירל
-מילים: רון ביטון, מאי ספדיה ונועה קירל
-לחן: רון ביטון, מאי ספדיה, שגיא קריב ואיתי קלדרון
+const lesson1lyricsHeader = `<div style="text-align:center;margin-bottom:14px"><a href="https://www.youtube.com/watch?v=ZOf7aMbzQAM" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#ff0000;color:white;padding:10px 20px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:14px;font-weight:700">▶ לקליפ ביוטיוב</a></div>`;
 
-וזה בדוק
-בודק לי את הלוק
-תגיד אתה דפוק
-את מי אתה שופט תקח עוד שלוק מהאולה לה
-תמיד עם סוללה
-אל תכתוב לי מגילה
-אני משהו מיוחדת אתה רגיל לרגילה
+const lesson1lyrics = `פנתרה — נועה קירל
+מילים: נועה קירל, ירדן פלג, רון ביטון ואיתי שמעוני
+לחן: נועה קירל, ירדן פלג, רון ביטון ואיתי שמעוני
 
-כולם מחכים אני עקפתי את התור
-כי דיווה אמיתית היא לא נכנסת מאחור
-כולי צבעונית לא אל תבוא לי בשחור
-תדליק לי את האור
+בית א:
+פנסים דולקים עלי בלילה
+כל העיניים עליי, כל העיניים עליי (אני פנתרה)
+עדיין ממשיכה לעלות למעלה
+אל תגידו לי די, רק אל תגידו לי די די די
+יצאתי עם שיניים חשופות - נושכת
+בוא תביא לי אלף אריות - טורפת
+מוזמנים לבדוק ת׳קבלות - מוכרת
+כל העיניים עלי
+ואיך אנ'לא אוהבת מוסכמות - שוברת
+וכמה שישימו לי גבולות - עוברת
+וכל מה שעושים אני עושה - אחרת
+רק אל תגידו לי די
 
-כשמשתיקים אותי אני רוצה לצרוח
-אם לא נותנים לי אז אני אקח בכוח
-לאט לאט זה יכנס לכם למוח
-שכל אחד הוא מי שבא לו
-אל תגע לי אל תגע לו
-מי שלא מתאים לו אז תגידי לו
+פזמון:
+כל היום אני בכל מקום
+אין דקה לנשום, אין דקה לנשום
+בלילות אנ'לא רוצה לחלום
+אני רוצה לטעום, אני רוצה לטעום
 
-אז תגידי לא אהא
-פרובוקטיבית אהא
-אגרסיבית אהא
-טייק איט אור ליב איט אהא
-ומי שלא מתאים לו אז תגידי לו
+הוק:
+אני פנתרה
+אני ערה וכולם ישנים
+הם אומרים שאני מוזרה
+אני אומרת שהם רגילים
+חגורה שחורה
+אל תלמדו אותי תרגילים
+אני נולדתי ככה אשכרה
+והיום כבר כולם יודעים
+אני פנתרה
 
-דוז פואה — אני לא מבקשת
-גם ככה כל אירופה כבר נפלה אצלי ברשת
-ממ מואה — אני לא מתביישת
-גם ככה פה כולם יודעים
-שאני באה לשרוף
-אני באה לטרוף
-את העיניים לשטוף
-אני אשים לך סוף
+בית ב':
+כשאני נותנת ת'סימן
+כל העיניים עלי
+רק אל תגידו לי די די די
+כולם מדברים אני עושה בשקט
+ואם זה לא בא לי טוב אני מוחקת
+שמה ת'מעיל המנומר - שואגת
+רק אל תגידו לי די
 
-מבחוץ זה נראה ורוד
-מבפנים עוד צריכה ללמוד לשרוד
-לא הפסקתי רציתי עוד
-כל אחד הוא מי שבא לו
-אל תגע לי אל תגע לו
-תביא לי את ההוא שיש לו אומץ להגיד
+פזמון:
+כל היום אני בכל מקום…
 
-פרובוקטיבית היי
-קצת אגרסיבית היי
-הא הא אהא — אז תגידי לו
-ומי שלא מתאים לו אז תגידי לו`;
+הוק:
+אני פנתרה…`;
 
 const lesson2lyrics = `אין לי ארץ אחרת — גלי עטרי
 מילים: אהוד מנור | לחן: קורין אלאל
@@ -384,61 +385,64 @@ const lesson2lyrics = `אין לי ארץ אחרת — גלי עטרי
 עד שתחדש ימיה
 עד שתפקח את עיניה`;
 
-const lesson1exercise = `<div class="ex-wrap">
-  <div class="ex-rule-box"><strong>הכלל | La regla</strong>אני + תואר — ללא פועל! בעברית, בהווה, פועל "להיות" נעלם.</div>
-  <div class="ex-section-title">תרגיל 1 — ניתוח השיר</div>
-  <table class="ex-table"><thead><tr><th>משפט מהשיר</th><th>מבנה</th><th>ספרדית</th></tr></thead><tbody>
-    <tr><td>אני מיוחדת</td><td>אני + תואר נקבה</td><td>Yo soy especial</td></tr>
-    <tr><td>אני צבעונית</td><td>אני + תואר נקבה</td><td>Yo soy colorida</td></tr>
-    <tr><td><span class="ex-fill">אני חזקה</span></td><td>אני + תואר נקבה</td><td>Yo soy fuerte</td></tr>
-    <tr><td><span class="ex-fill">אני יצירתית</span></td><td>אני + תואר נקבה</td><td>Yo soy creativa</td></tr>
-  </tbody></table>
-  <div class="ex-section-title">מילון תכונות | Vocabulario</div>
-  <table class="vocab-table"><thead><tr><th>ספרדית</th><th>נקבה</th><th>זכר</th></tr></thead><tbody>
-    <tr><td>fuerte</td><td>חֲזָקָה</td><td>חָזָק</td></tr>
-    <tr><td>valiente</td><td>אַמִּיצָה</td><td>אַמִּיץ</td></tr>
-    <tr><td>creativo/a</td><td>יְצִירָתִית</td><td>יְצִירָתִי</td></tr>
-    <tr><td>independiente</td><td>עַצְמָאִית</td><td>עַצְמָאִי</td></tr>
-    <tr><td>curioso/a</td><td>סַקְרָנִית</td><td>סַקְרָן</td></tr>
-    <tr><td>gracioso/a</td><td>מַצְחִיקָה</td><td>מַצְחִיק</td></tr>
-    <tr><td>tranquilo/a</td><td>רְגוּעָה</td><td>רָגוּעַ</td></tr>
-    <tr><td>apasionado/a</td><td>נִלְהֶבֶת</td><td>נִלְהָב</td></tr>
-    <tr><td>inteligente</td><td>חֲכָמָה</td><td>חָכָם</td></tr>
-    <tr><td>optimista</td><td>אוֹפְּטִימִית</td><td>אוֹפְּטִימִי</td></tr>
-  </tbody></table>
-  <div class="ex-section-title">תרגיל 2 — זכר ונקבה</div>
-  <ul class="ex-list">
-    <li>פרובוקטיבית → <span class="ex-fill">פרובוקטיבי</span></li>
-    <li>צבעונית → <span class="ex-fill">צבעוני</span></li>
-    <li>יצירתית → <span class="ex-fill">יצירתי</span></li>
-    <li>סקרנית → <span class="ex-fill">סקרן</span></li>
-    <li>אמיצה → <span class="ex-fill">אמיץ</span></li>
-  </ul>
-  <div class="ex-section-title">תרגיל 3 — הפזמון שלי</div>
-  <div style="background:var(--off-white);border-radius:10px;padding:18px;font-family:'Frank Ruhl Libre',serif;font-size:17px;line-height:2.6;direction:rtl;text-align:right;color:var(--text-dark)">אני ___________________________<br>אני ___________________________<br>אני ___________________________<br><span style="font-size:14px;color:var(--blue)">זה מי שאני</span></div>
-  <div class="discussion-box"><p>לדיון בכיתה | Para discutir en clase</p><ol>
-    <li>למה נועה קירל בחרה לתאר את עצמה בלי פועל?</li>
-    <li>האם 'פרובוקטיבית' היא תכונה שלילית או חיובית בשיר? למה?</li>
-    <li>מהי תכונה שמגדירה אתכם ולא מופיעה במילון?</li>
-  </ol></div>
+const lesson1grammar = `<div class="ex-wrap">
+<div class="ex-section-title">שם עצם | Sustantivo</div>
+<div class="note-box">אחד מחלקי הדיבור. כל מילה שמצביעה על ישויות בעולם (למשל חפצים ובני אדם, כגון: אמא, טלפון, רחוב, צעצוע) ועל רעיונות מופשטים (למשל אהבה, חופש).
+<br><br>
+<strong>דוגמאות:</strong><br>
+👤 אנשים ומשפחה — אמא, אבא, ילד, ילדה, חבר, מורה, רופא<br>
+📍 מקומות — עיר, בית, כיתה, שוק, ים, הר, רחוב<br>
+🌿 טבע — שמש, ירח, עץ, פרח, מים, אדמה, שמיים<br>
+📦 חפצים — ספר, שולחן, כיסא, תיק, דלת, חלון<br>
+💛 רגשות ורעיונות — אהבה, שמחה, פחד, חופש, שלום
+<br><br>
+<strong>2 דרכים לזהות שם עצם:</strong><br>
+1. <strong>יידוע</strong> — כמעט כל שמות העצם ניתן ליידע: כוס (כללי) ← הכוס (ספציפי)<br>
+2. <strong>שיוך</strong> — אפשר לומר למי הוא שייך: הנייד שלי, המחשב שלה
+</div>
+
+<div class="ex-section-title">שם תואר | Adjetivo</div>
+<div class="note-box">אחד מחלקי הדיבור. שם התואר מתאר את שם העצם. ניתן להטות אותו במין ובמספר.
+<br>למשל: מעניין, מעניינת, מעניינים, מעניינות.
+<br><br>
+<strong>דוגמאות:</strong><br>
+📏 גודל וצורה — גדול/ה, קטן/ה, ארוך/ה, קצר/ה, עגול/ה<br>
+🎨 צבע — אדום/ה, כחול/ה, ירוק/ה, לבן/ה, שחור/ה<br>
+⭐ תכונות — חזק/ה, חלש/ה, חכם/ה, יפה, טוב/ה, רע/ה<br>
+🌡️ תחושות — חם/ה, קר/ה, רועש/ת, שקט/ה, מתוק/ה
+<br><br>
+<strong>2 דרכים לזהות שם תואר:</strong><br>
+1. ניתן להטות בארבע צורות: יחיד, יחידה, רבים, רבות — משוגע, משוגעת, משוגעים, משוגעות<br>
+2. המילה מתארת שם עצם כלשהו
+</div>
+
+<div class="ex-section-title">פועל | Verbo</div>
+<div class="note-box">אחד מחלקי הדיבור. מילה המביעה פעולה (הולכים, ירדו), מצב (עומד) או התרחשות (נפלתם). הפועל הוא הדבק של המשפט — מחבר את כל חלקיו ומגדיר את היחסים ביניהם.
+<br><br>
+<strong>איך נזהה פועל?</strong><br>
+1. <strong>גוף וזמן</strong> — חשבתי = זמן עבר, גוף: אני<br>
+2. <strong>ניתן להטות בגופים ובזמנים:</strong><br>
+אנחנו מחר <em>נסתובב</em> — אנחנו אתמול <em>הסתובבנו</em> — אנחנו עכשיו <em>מסתובבים</em><br>
+אני מחר <em>אסתובב</em> — את מחר <em>תסתובבי</em>
+</div>
 </div>`;
 
 const lessons = [
-  { num:1,  date:"17/06", he:"הצגת עצמית + סמלים יהודיים", es:"Presentación personal y símbolos judíos", song:"פרובוקטיבית — נועה קירל", grammar:"אני + [שם עצם/תואר] ללא פועל", lyrics:lesson1lyrics, exercise:lesson1exercise },
+  { num:1,  date:"17/06", he:"הצגת עצמית + סמלים יהודיים", es:"Presentación personal y símbolos judíos", song:"פנתרה — נועה קירל", grammar:lesson1grammar, lyrics:lesson1lyrics, exercise:`<div class="ex-wrap"><div class="note-box" style="text-align:center;direction:ltr"><p style="font-size:15px;color:var(--navy);font-weight:700;margin-bottom:12px">✏️ תרגילים | Ejercicios</p><a href="https://lo.cet.ac.il/player/?document=0e099400-815c-4171-896b-4e94344ea727&language=he#pageId=page_1&documentId=0e099400-815c-4171-896b-4e94344ea727" target="_blank" style="display:inline-block;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">לתרגילים ← לחצו כאן</a></div></div>` },
   { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:"כינויי קניין אגלוטינטיביים: ארצי, אדמתי", lyrics:lesson2lyrics, exercise:"" },
   { num:3,  date:"01/07", he:"תל אביב: העיר ללא הפסקה", es:"Tel Aviv: Estilo de Vida", song:'תל אביב (עומר אדם)', grammar:"", lyrics:"", exercise:"" },
   { num:4,  date:"08/07", he:"ירושלים: ישן מול חדש", es:"Jerusalén: Historia y Modernidad", song:'ירושלים של זהב (נעמי שמר)', grammar:"", lyrics:"", exercise:"" },
   { num:5,  date:"15/07", he:"ט'ו אב - יום האהבה", es:"Tu Ve Ab", song:"שירי אהבה — מוש בן ארי + עידן רייכל", grammar:"", lyrics:"", exercise:"" },
-  { num:6,  date:"05/08", he:"רגשות ואיורים", es:"Expresar Emociones", song:"", grammar:"", lyrics:"", exercise:"" },
+  { num:6,  date:"05/08", he:"הבעת רגשות", es:"Expresar Emociones", song:"", grammar:"", lyrics:"", exercise:"" },
   { num:7,  date:"12/08", he:"טכנולוגיה וחדשנות", es:"Tecnología - Start Up Nation", song:'מתנות קטנות (רמי קלינשטיין)', grammar:"", lyrics:"", exercise:"" },
-  { num:8,  date:"19/08", he:"עברית תקנית VS עברית מדוברת", es:"Hebreo formal vs hebreo de la calle", song:"העברית החדשה", grammar:"", lyrics:"", exercise:"" },
+  { num:8,  date:"19/08", he:"עברית תקנית VS עברית מדוברת", es:"Hebreo formal vs hebreo de la calle", song:"העברית החדשה (התקווה 6)", grammar:"", lyrics:"", exercise:"" },
   { num:9,  date:"26/08", he:"ההומור הישראלי", es:"Humor Israeli", song:"ארץ נהדרת + ניר וגלי", grammar:"", lyrics:"", exercise:"" },
   { num:10, date:"02/09", he:"ראש השנה: התחלות", es:"Preparación Rosh Hashaná", song:'בראשית (גלי עטרי)', grammar:"", lyrics:"", exercise:"" },
   { num:11, date:"09/09", he:"חגי תשרי: סמלים", es:"Rosh Hashaná: Tradiciones", song:'שנה טובה (עממי)', grammar:"", lyrics:"", exercise:"" },
   { num:12, date:"16/09", he:"יום כיפור: סליחה", es:"Iom Kipur: Perdón", song:'אדון הסליחות (פיוט)', grammar:"", lyrics:"", exercise:"" },
   { num:13, date:"23/09", he:'סוכות: "לזרום"', es:"Sucot: La cabaña temporal", song:'שלומית בונה סוכה (נעמי שמר)', grammar:"", lyrics:"", exercise:"" },
   { num:14, date:"30/09", he:"שמחת תורה: מעגלים", es:"Simjat Torá: Continuidad", song:"שימחה רבה", grammar:"", lyrics:"", exercise:"" },
-  { num:15, date:"14/10", he:"שיבעה באוקטובר", es:"7 de octubre", song:"שיר גיבורי על", grammar:"", lyrics:"", exercise:"" },
+  { num:15, date:"14/10", he:"שיבעה באוקטובר", es:"7 de octubre", song:"שיר גיבורי על (התקווה 6)", grammar:"", lyrics:"", exercise:"" },
   { num:16, date:"21/10", he:"קריאת סיפורים קצרים", es:"Comprensión Lectora", song:"עוד יבוא שלום עלינו", grammar:"", lyrics:"", exercise:"" },
   { num:17, date:"28/10", he:"חיפה והצפון", es:"Haifa y los Jardines Bahai", song:'חופים (נעמי שמר)', grammar:"", lyrics:"", exercise:"" },
   { num:18, date:"04/11", he:"זיכרון ושלום (רבין)", es:"Aniversario Itzjak Rabin", song:"שיר לשלום", grammar:"", lyrics:"", exercise:"" },
@@ -489,7 +493,7 @@ function openLesson(i) {
   document.getElementById('d-title-es').textContent = l.es;
   document.getElementById('d-song-label').textContent = l.song ? '🎵 ' + l.song : '';
   const songBody = document.getElementById('d-song-body');
-  if (l.lyrics) { songBody.style.alignItems = 'stretch'; songBody.innerHTML = `<div class="lyrics-box">${l.lyrics}</div>`; }
+  if (l.lyrics) { songBody.style.alignItems = 'stretch'; songBody.innerHTML = (i === 0 ? lesson1lyricsHeader : '') + `<div class="lyrics-box">${l.lyrics}</div>`; }
   else if (l.song) { songBody.innerHTML = `<div class="note-box" style="text-align:center">🎵 <strong>${l.song}</strong><br><span style="font-size:13px;color:var(--text-light)">מילות השיר יתווספו בקרוב · Letra próximamente</span></div>`; }
   else { songBody.innerHTML = '<span class="coming-soon">✦ תוכן יתווסף בקרוב · Contenido próximamente</span>'; }
   const grammarBody = document.getElementById('d-grammar-body');
