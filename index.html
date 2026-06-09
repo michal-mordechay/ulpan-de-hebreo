@@ -407,7 +407,33 @@ const lesson1grammar = `<div class="ex-wrap">
 
 const lessons = [
   { num:1,  date:"17/06", he:"הצגת עצמית + סמלים יהודיים", es:"Presentación personal y símbolos judíos", song:"לקחת את ידי בידך — יהודית רביץ", grammar:lesson1grammar, lyrics:lesson1lyrics, exercise:`<div class="ex-wrap"><div class="note-box" style="text-align:center;direction:ltr"><p style="font-size:15px;color:var(--navy);font-weight:700;margin-bottom:12px">✏️ תרגילים | Ejercicios</p><a href="https://lo.cet.ac.il/player/?document=0e099400-815c-4171-896b-4e94344ea727&language=he#pageId=page_1&documentId=0e099400-815c-4171-896b-4e94344ea727" target="_blank" style="display:inline-block;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">לתרגילים ← לחצו כאן</a></div></div>` },
-  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:"כינויי קניין אגלוטינטיביים: ארצי, אדמתי", lyrics:lesson2lyrics, exercise:`<div class="ex-wrap">
+  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:`<div class="ex-wrap">
+<div class="note-box">
+<strong style="font-size:16px">כינויי קניין (כינויי שייכות)</strong><br><br>
+כינויי קניין הם כינויים המצורפים לשם עצם כדי לציין למי הוא שייך. בעברית, כינויים אלו יכולים להופיע בשתי דרכים עיקריות: פרוּד (מילת שייכות נפרדת) או חָבוּר (תוספת אותיות בסוף המילה).
+<br><br>
+<strong>1. כינוי קניין פּרוּד</strong><br>
+זהו השימוש הנפוץ ביותר בדיבור היומיומי. הוא מורכב משם העצם, מילת השייכות "של", והכינוי.
+<br>
+<span style="color:var(--blue)">דוגמה: הבית שלי, הכלב שלך, הספר שלה.</span>
+<br><br>
+<strong>2. כינוי קניין חָבוּר (נטיית השייכות)</strong><br>
+כינויים אלו הם סיומות מיוחדות שמצטרפות ישירות לסוף שם העצם ומחליפות את המילה "של". הסיומות משתנות בהתאם למין ולמספר של העצם השייך.
+<br><br>
+<span style="color:var(--navy);font-weight:700">לדוגמה — "סֵפֶר" (זכר, יחיד):</span>
+<div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;direction:rtl">
+  <span>שֶׁלִּי ← סִפְרִי</span><span>שֶׁלְּךָ ← סִפְרְךָ</span>
+  <span>שֶׁלָּךְ ← סִפְרֵךְ</span><span>שֶׁלּוֹ ← סִפְרוֹ</span>
+  <span>שֶׁלָּהּ ← סִפְרָהּ</span>
+</div>
+<br>
+<span style="color:var(--navy);font-weight:700">לדוגמה — "סְפָרִים" (זכר, רבים):</span>
+<div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;direction:rtl">
+  <span>שֶׁלִּי ← סְפָרַי</span><span>שֶׁלְּךָ ← סְפָרֶיךָ</span>
+  <span>שֶׁלָּהּ ← סְפָרֶיהָ</span><span>שֶׁלָּנוּ ← סְפָרֵינוּ</span>
+</div>
+</div>
+</div>`, lyrics:lesson2lyrics, exercise:`<div class="ex-wrap">
 <div class="ex-section-title">כינויי שייכות (כינוי קניין)</div>
 
 <div class="note-box" style="margin-bottom:16px">
@@ -487,6 +513,11 @@ ${[
   <span style="color:var(--text-light)">←</span>
   <input type="text" placeholder="..." style="border:none;border-bottom:2px solid var(--navy);background:transparent;font-family:'Frank Ruhl Libre',serif;font-size:15px;flex:1;text-align:right;outline:none;color:var(--navy)">
 </div>`).join('')}
+</div>
+
+<div class="ex-section-title" style="margin-top:20px">תרגול נוסף | Práctica adicional</div>
+<div style="text-align:center;margin-top:10px">
+  <a href="https://wordwall.net/resource/9449711/%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">🎮 לתרגול נוסף ב-Wordwall ←</a>
 </div>
 </div>` },
   { num:3,  date:"01/07", he:"תל אביב: העיר ללא הפסקה", es:"Tel Aviv: Estilo de Vida", song:'תל אביב (עומר אדם)', grammar:"", lyrics:"", exercise:"" },
