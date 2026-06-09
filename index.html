@@ -335,33 +335,7 @@ const lesson1lyrics = `לקחת את ידי בידך — יהודית רביץ
 היי, מלאך ושטן, התשוב לעצור את הזמן
 דברים שרואים משם לא רואים מכאן.`;
 
-const lesson2lyrics = `אין לי ארץ אחרת — גלי עטרי
-מילים: אהוד מנור | לחן: קורין אלאל
-
-אין לי ארץ אחרת
-גם אם אדמתי בוערת
-רק מילה בעברית
-חודרת אל עורקיי, אל נשמתי
-בגוף כואב, בלב רעב
-כאן הוא ביתי
-
-לא אשתוק, כי ארצי
-שינתה את פניה
-לא אוותר לה,
-אזכיר לה,
-ואשיר כאן באוזניה
-עד שתפקח את עיניה
-
-אין לי ארץ אחרת
-גם אם אדמתי בוערת
-רק מילה בעברית חודרת
-אל עורקיי, אל נשמתי
-בגוף כואב, בלב רעב
-כאן הוא ביתי
-
-אין לי ארץ אחרת
-עד שתחדש ימיה
-עד שתפקח את עיניה`;
+const lesson2lyrics = `TWO_COLUMN`;
 
 const lesson1grammar = `<div class="ex-wrap">
 <div class="ex-section-title">שם עצם | Sustantivo</div>
@@ -407,7 +381,7 @@ const lesson1grammar = `<div class="ex-wrap">
 
 const lessons = [
   { num:1,  date:"17/06", he:"הצגת עצמית + סמלים יהודיים", es:"Presentación personal y símbolos judíos", song:"לקחת את ידי בידך — יהודית רביץ", grammar:lesson1grammar, lyrics:lesson1lyrics, exercise:`<div class="ex-wrap"><div class="note-box" style="text-align:center;direction:ltr"><p style="font-size:15px;color:var(--navy);font-weight:700;margin-bottom:12px">✏️ תרגילים | Ejercicios</p><a href="https://lo.cet.ac.il/player/?document=0e099400-815c-4171-896b-4e94344ea727&language=he#pageId=page_1&documentId=0e099400-815c-4171-896b-4e94344ea727" target="_blank" style="display:inline-block;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">לתרגילים ← לחצו כאן</a></div></div>` },
-  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי", grammar:`<div class="ex-wrap">
+  { num:2,  date:"24/06", he:"זהות ושייכות", es:"Identidad y Pertenencia", song:"אין לי ארץ אחרת — גלי עטרי | יושב מול הנייר — אריק איינשטיין", grammar:`<div class="ex-wrap">
 <div class="note-box">
 <strong style="font-size:16px">כינויי קניין (כינויי שייכות)</strong><br><br>
 כינויי קניין הם כינויים המצורפים לשם עצם כדי לציין למי הוא שייך. בעברית, כינויים אלו יכולים להופיע בשתי דרכים עיקריות: פרוּד (מילת שייכות נפרדת) או חָבוּר (תוספת אותיות בסוף המילה).
@@ -583,7 +557,67 @@ function openLesson(i) {
   document.getElementById('d-title-es').textContent = l.es;
   document.getElementById('d-song-label').textContent = l.song ? '🎵 ' + l.song : '';
   const songBody = document.getElementById('d-song-body');
-  if (l.lyrics) { songBody.style.alignItems = 'stretch'; songBody.innerHTML = (i === 0 ? lesson1lyricsHeader : '') + `<div class="lyrics-box">${l.lyrics}</div>`; }
+  if (l.lyrics === 'TWO_COLUMN') {
+    songBody.style.alignItems = 'stretch';
+    songBody.innerHTML = `<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;direction:rtl">
+      <div>
+        <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:8px;text-align:right">אין לי ארץ אחרת — גלי עטרי<br><span style="font-weight:400;color:var(--text-light)">מילים: אהוד מנור | לחן: קורין אלאל</span></div>
+        <div class="lyrics-box" style="font-size:13px">אין לי ארץ אחרת
+גם אם אדמתי בוערת
+רק מילה בעברית
+חודרת אל עורקיי, אל נשמתי
+בגוף כואב, בלב רעב
+כאן הוא ביתי
+
+לא אשתוק, כי ארצי
+שינתה את פניה
+לא אוותר לה,
+אזכיר לה,
+ואשיר כאן באוזניה
+עד שתפקח את עיניה
+
+אין לי ארץ אחרת
+גם אם אדמתי בוערת
+רק מילה בעברית חודרת
+אל עורקיי, אל נשמתי
+בגוף כואב, בלב רעב
+כאן הוא ביתי
+
+אין לי ארץ אחרת
+עד שתחדש ימיה
+עד שתפקח את עיניה</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:8px;text-align:right">יושב מול הנייר — אריק איינשטיין<br><span style="font-weight:400;color:var(--text-light)">מילים: אריק איינשטיין | לחן: מיקי גבריאלוב</span></div>
+        <div class="lyrics-box" style="font-size:13px">יושב מול הנייר, העט ביד כמו חרב
+יושב מול הנייר, רוצה לשפוך הכל
+יושב מול הנייר, רואה אותך נופלת
+מביט אל הנייר ולא יוצא לי קול
+
+אוי ארצי מולדתי את הולכת פייפן,
+שברת לי את הלב לחתיכות קטנות
+היה לנו חלום, ועכשיו הוא איננו,
+אני כל כך עצוב בא לי לבכות
+
+יושב מול הנייר, מתחיל לרדת ערב
+יושב מול הנייר, בחוץ נהיה כחול
+יושב מול הנייר, ואת שם מתמוטטת
+מביט אל הנייר, טומן הראש בחול
+
+אוי ארצי מולדתי...
+
+יושב מול הנייר, העט ביד כמו חרב
+יושב מול הנייר, רוצה לשפוך הכל
+יושב מול הנייר, רואה אותך נופלת
+מביט אל הנייר ולא יוצא לי קול
+
+אוי ארצי מולדתי...</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:14px">
+      <a href="https://www.ynet.co.il/news/article/sjym5plcc" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--off-white);border:1.5px solid var(--border-mid);color:var(--navy);padding:10px 20px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:14px;font-weight:600">📰 לכתבה קשורה ב-Ynet ←</a>
+    </div>`;
+  } else if (l.lyrics) { songBody.style.alignItems = 'stretch'; songBody.innerHTML = (i === 0 ? lesson1lyricsHeader : '') + `<div class="lyrics-box">${l.lyrics}</div>`; }
   else if (l.song) { songBody.innerHTML = `<div class="note-box" style="text-align:center">🎵 <strong>${l.song}</strong><br><span style="font-size:13px;color:var(--text-light)">מילות השיר יתווספו בקרוב · Letra próximamente</span></div>`; }
   else { songBody.innerHTML = '<span class="coming-soon">✦ תוכן יתווסף בקרוב · Contenido próximamente</span>'; }
   const grammarBody = document.getElementById('d-grammar-body');
