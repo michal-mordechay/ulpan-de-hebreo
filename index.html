@@ -166,6 +166,7 @@
   <button class="nav-btn active" onclick="showPage('home')">🏠 Inicio · בית</button>
   <button class="nav-btn" onclick="showPage('lessons')">📚 Lecciones · שיעורים</button>
   <button class="nav-btn" onclick="showPage('about')">👩‍🏫 Sobre mí · עליי</button>
+  <button class="nav-btn" onclick="showPage('tools')">🛠️ Herramientas · כלים</button>
 </div>
 
 <div id="page-home" class="page active">
@@ -231,6 +232,21 @@
   <div class="lessons-section">
     <div class="section-title">כל השיעורים · Todas las lecciones</div>
     <div class="lessons-grid" id="all-grid"></div>
+  </div>
+</div>
+
+<div id="page-tools" class="page">
+  <div class="info-section">
+    <div class="info-card">
+      <div class="info-card-header">🛠️ כלים שימושיים · Herramientas útiles</div>
+      <div class="info-card-body" style="padding:20px">
+        <div style="background:var(--off-white);border-radius:12px;padding:20px;text-align:center">
+          <div style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:6px">הַנַּקְדָן | Nakdan</div>
+          <div style="font-size:13px;color:var(--text-mid);margin-bottom:14px">כלי ניקוד אוטומטי לטקסט בעברית — האקדמיה ללשון העברית</div>
+          <a href="https://nakdan.dicta.org.il/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:white;padding:12px 24px;border-radius:10px;text-decoration:none;font-family:'Heebo',sans-serif;font-size:15px;font-weight:700">לאתר הנקדן ←</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -547,7 +563,7 @@ function showPage(id) {
   document.querySelectorAll('.lesson-page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
-  const map = { home:0, lessons:1, about:2 };
+  const map = { home:0, lessons:1, about:2, tools:3 };
   document.querySelectorAll('.nav-btn')[map[id]].classList.add('active');
   lastPage = id;
   window.scrollTo(0, 0);
